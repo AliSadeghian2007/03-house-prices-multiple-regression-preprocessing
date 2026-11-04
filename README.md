@@ -23,19 +23,23 @@ place it in the `data/` folder.
 ## Results
 | Metric | Test value |
 |--------|-----------|
-| R²     | TODO |
-| MAE    | TODO |
-| RMSE   | TODO |
+| R²     | 0.815 |
+| MAE    | 23,074 |
+| RMSE   | 37,675 |
 
 ![Predicted vs Actual](plots/predicted_vs_actual.png)
 
 ## Interpretation
-TODO: 2-3 sentences about the most important coefficients.
+  - one more square foot of `GrLivArea` is associated with about $49.5 higher predicted price;
+  - a house built one year later is predicted to cost about $364 more;
+  - a house in `BrDale` is predicted to cost about $27,000 less than a similar house
+    in the baseline neighborhood.
 
 ## How to run
 ```bash
 pip install -r requirements.txt
 jupyter notebook notebook.ipynb
+Developed and tested with Python 3.13.
 ```
 
 ## Tech
